@@ -14,9 +14,6 @@ import singleton.SingletonLog;
 
 /**
  * Tests for the ArrayList used in the Kingdom's Deposit system.
- * This ensures the proper functioning of the ArrayList implementation
- * that serves as the foundation for the Deposit adapter used by
- * Miners and ValuableTransporters in the kingdom simulation.
  */
 public class KingdomArrayListTest {
   private ListADT<SingletonValuables> treasures;
@@ -37,7 +34,6 @@ public class KingdomArrayListTest {
 
   /**
    * Test that initially the treasure collection is empty,
-   * similar to how a newly created deposit starts empty.
    */
   @Test
   public void testEmptyTreasureCollection() {
@@ -46,7 +42,6 @@ public class KingdomArrayListTest {
     assertEquals("{}", treasures.toString());
   }  /**
    * Test adding valuables to the collection,
-   * similar to how miners would add treasures to the deposit.
    */
   @Test
   public void testAddValuables() {
@@ -61,7 +56,6 @@ public class KingdomArrayListTest {
 
   /**
    * Test inserting valuables at specific positions,
-   * which may happen when organizing the kingdom's treasures.
    */
   @Test
   public void testAddValuableAtIndex() {
@@ -77,7 +71,6 @@ public class KingdomArrayListTest {
 
   /**
    * Test checking if specific treasures exist in the collection,
-   * similar to how the TreasureRoom might check its inventory.
    */
   @Test
   public void testContainsValuable() {
@@ -90,7 +83,6 @@ public class KingdomArrayListTest {
 
   /**
    * Test finding the position of a valuable in the collection,
-   * useful for the king to locate specific treasures.
    */
   @Test
   public void testFindValuableIndex() {
@@ -110,7 +102,6 @@ public class KingdomArrayListTest {
 
   /**
    * Test removing a valuable by reference,
-   * similar to how a ValuableTransporter might take a specific item.
    */
   @Test
   public void testRemoveValuableByReference() {
@@ -130,7 +121,6 @@ public class KingdomArrayListTest {
 
   /**
    * Test removing a valuable by index,
-   * similar to how the king might take the first available valuable.
    */
   @Test
   public void testRemoveValuableByIndex() {
@@ -147,7 +137,6 @@ public class KingdomArrayListTest {
 
   /**
    * Test replacing a valuable with another,
-   * which might happen during inventory management.
    */
   @Test
   public void testReplaceValuable() {
@@ -167,7 +156,6 @@ public class KingdomArrayListTest {
 
   /**
    * Test error handling when trying to access valuables that don't exist,
-   * like when the TreasureRoom is empty.
    */
   @Test
   public void testAccessEmptyTreasure() {
@@ -178,7 +166,6 @@ public class KingdomArrayListTest {
 
   /**
    * Test error handling when trying to access valuables outside the collection,
-   * similar to requesting unavailable treasures.
    */
   @Test
   public void testAccessInvalidTreasureIndex() {
@@ -190,7 +177,6 @@ public class KingdomArrayListTest {
 
   /**
    * Test error handling when trying to remove from an empty collection,
-   * like when a ValuableTransporter tries to take from an empty deposit.
    */
   @Test
   public void testRemoveFromEmptyTreasureCollection() {
@@ -201,7 +187,6 @@ public class KingdomArrayListTest {
 
   /**
    * Test error handling when trying to replace a valuable that doesn't exist,
-   * similar to trying to modify a non-existent treasure.
    */
   @Test
   public void testReplaceNonexistentTreasure() {
@@ -213,7 +198,6 @@ public class KingdomArrayListTest {
 
   /**
    * Test how the collection's string representation works,
-   * useful for logging the kingdom's inventory.
    */
   @Test
   public void testTreasureCollectionToString() {
@@ -230,7 +214,6 @@ public class KingdomArrayListTest {
 
   /**
    * Test that the Deposit adapter properly uses the ArrayList
-   * to store treasures.
    */
   @Test
   public void testDepositUsingArrayList() {

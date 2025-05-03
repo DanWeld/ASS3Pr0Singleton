@@ -8,7 +8,6 @@ import producer_consumer_adapter.DepositValuables;
 
 /**
  * This is a simplified version of the ArrayList test that doesn't rely on JUnit.
- * It can be run directly to verify the ArrayList functionality in the kingdom context.
  */
 public class SimpleArrayListKingdomTest {
     

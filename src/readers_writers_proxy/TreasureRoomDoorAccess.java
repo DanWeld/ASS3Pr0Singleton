@@ -5,6 +5,4 @@ public interface TreasureRoomDoorAccess {
   public void releaseRead();
   public void acquireWrite();
   public void releaseWrite();
-//  void acquireKingAccess();
-//  void releaseKingAccess();
 }

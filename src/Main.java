@@ -6,12 +6,7 @@ import producer_consumer_adapter.ValuableTransporter;
 import readers_writers_proxy.*;
 import singleton.SingletonLog;
 
-/**
- * Main class that demonstrates the full kingdom simulation system.
- * This fulfills the requirement to "Test the full system in a main method with 
- * a Deposit, one King and a couple of each of the other actors: Miners, 
- * ValuableTransporters and Accountants"
- */
+
 public class Main {
   public static void main(String[] args) {
     System.out.println("Kingdom Simulation Starting...");

@@ -6,9 +6,6 @@ import java.util.Random;
 /**
  * Implementation of the Singleton pattern for valuable items.
  * This class ensures that only one instance of the valuable handler exists.
- * 
- * For testing compatibility, it provides a mechanism for "remembering" the type
- * that was set when an object reference was created.
  */
 public class SingletonValuables {  private static volatile SingletonValuables instance;
   private String valueType;
@@ -37,7 +34,6 @@ public class SingletonValuables {  private static volatile SingletonValuables in
   }
   /**
    * Get the singleton instance
-   * @return The SingletonValuables instance
    */
   public static SingletonValuables getInstance() {
     if (instance == null) {
