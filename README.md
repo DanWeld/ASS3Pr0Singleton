@@ -1,8 +1,9 @@
 # Assignment3Pro - Kingdom Simulation
 
-Singleton Pattern
+-> Singleton Pattern
 
-Producer-Consumer Pattern with Adapter
-readers_writers_proxy
+-> Producer-Consumer Pattern with Adapter
 
-jUnit Testing
+-> readers_writers_proxy
+
+-> jUnit Testing
